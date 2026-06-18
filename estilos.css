@@ -1,0 +1,196 @@
+/* Configuración General y Colores */
+:root {
+    --primary-color: #2a6f97;
+    --secondary-color: #014f86;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --evitar-color: #f8d7da;
+    --evitar-text: #721c24;
+    --consumir-color: #d4edda;
+    --consumir-text: #155724;
+    --border-radius: 10px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Tarjetas */
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Sección Motivación */
+.motivacion blockquote {
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    border-left: 5px solid var(--primary-color);
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+/* Listas y Pasos */
+.pasos-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+/* Grillas Flexibles */
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Cajas de Alerta (Evitar / Consumir) */
+.alerta-box {
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+}
+
+.evitar {
+    background-color: var(--evitar-color);
+    color: var(--evitar-text);
+}
+
+.consumir {
+    background-color: var(--consumir-color);
+    color: var(--consumir-text);
+}
+
+.alerta-box h3 {
+    margin-top: 0;
+}
+
+/* Bloques de Información Especiales */
+.info-bloque {
+    background-color: #e2eafc;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1.5rem 0;
+}
+
+.esquema-comidas {
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Tablas */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.tabla-datos th, .tabla-datos td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.tabla-datos th {
+    background-color: #f1f5f9;
+    color: var(--secondary-color);
+}
+
+/* Monitorización e ítems rápidos */
+.habito-item {
+    background-color: #f1f5f9;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Cajas de semanas */
+.semana-box {
+    background-color: #edf2f7;
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+    border-top: 4px solid var(--secondary-color);
+}
+
+.semana-box h4 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+/* Recetas y Secciones de Cali */
+.recetas-colombia, .local-cali {
+    background-color: #fff3cd;
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+    margin-top: 1.5rem;
+    border-left: 5px solid #ffc107;
+}
+
+.recetas-colombia h3, .local-cali h3 {
+    margin-top: 0;
+    color: #856404;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #343a40;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
